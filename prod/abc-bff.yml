@@ -1,12 +1,14 @@
+spring:
+  security:
+    user:
+      name: bff-client
+      password: password
 application:
-  domain: http://localhost:8080
   internal:
     mobile-privilege:
-      url:
-        patch: ${application.domain}/mobile-privilege/api/v1/voucher-transactions/
       security:
-        username: mobile-privilege-client-1
-        password: password-1
+        username: mobile-privilege-client
+        password: password
   retry:
     maxAttempts: 3
     backOff: 2000
