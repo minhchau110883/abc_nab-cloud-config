@@ -1,3 +1,14 @@
 application:
-  hello: hello
-  bff: abc
+  domain: http://localhost:8080
+  internal:
+    mobile-privilege:
+      url:
+        patch: ${application.domain}/mobile-privilege/api/v1/voucher-transactions/
+      security:
+        username: mobile-privilege-client-1
+        password: password-1
+  retry:
+    maxAttempts: 3
+    backOff: 2000
+  async:
+    delayTimeInSeconds: 5
