@@ -1,14 +1,14 @@
 spring:
   security:
     user:
-      name: bff-client-1
-      password: password
+      name: bff-client
+      password: '{cipher}86fa972f3074c22dace3c5c4f232df74d301bec7b46c43a0ecaa49b980ca7379'
 application:
   internal:
     mobile-privilege:
       security:
         username: mobile-privilege-client
-        password: password
+        password: '{cipher}499f86468e4cd53f85c6ae2ac39da2db2c74f0896165cc51f1e567d6f870790e'
   retry:
     maxAttempts: 3
     backOff: 2000
